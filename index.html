@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Developer Assessment</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery and UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script src="./js/konami.js"></script>
+
+  <script>
+  $( function() {
+    $( "#questions" ).accordion();
+    $(".easter-egg").hide();
+  } );
+  </script>
+
+</head>
+<body>
+
+  <h1>Developer Assessment</h1>
+
+  <div id="questions">
+    <h3>What is your favorite programming language, and why?</h3>
+    <div>
+      <p>
+        My favorite language that I’ve learned recently is SASS. The ability to create CSS dynamically, use abstractions, and create code reuse is just such a powerful idea compared to vanilla CSS.
+      </p>
+    </div>
+    <h3>Tabs or spaces, and why?</h3>
+    <div>
+      <p>
+        I usually prefer tabs, because I can select multiple lines of code at once and tab/untab them all at the same time. This allows me to align large blocks of code at once and that can be a great help with tidying up things.
+      </p>
+    </div>
+    <h3>Do you have a Stack Overflow account?</h3>
+    <div>
+      <p>
+        No, I do not have a Stack Overflow account. I use Stack Overflow often, but usually my questions already have answers, or enough of an answer to get me pointed in the right direction.
+      </p>
+    </div>
+    <h3>What does JSON stand for?</h3>
+    <div>
+      <p>
+        JavaScript Object Notation
+      </p>
+    </div>
+    <h3 class="easter-egg">Bonus Question</h3>
+    <div class="easter-egg">
+      <p>
+        My latest hobby is urban farming
+      </p>
+    </div>
+    <!-- Easter Egg: If you type out the Konami Code (↑ ↑ ↓ ↓ ← → ← → B A) while viewing the page, you'll get a bonus question added to the list -->
+  </div>
+</body>
+</html>
